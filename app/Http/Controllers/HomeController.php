@@ -29,6 +29,6 @@ class HomeController extends Controller
         $approved = Registration::where('status_id',2)->get();
         $rejected = Registration::where('status_id',3)->get();
 
-        return view('home');
+        return view('home', compact('pending','approved','rejected'));
     }
 }

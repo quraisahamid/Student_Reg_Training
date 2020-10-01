@@ -14,7 +14,7 @@
                     <div class="col-sm-4">
                       <div class="card">
                         <div class="card-body">
-                        <h1 class="card-title"></h1>
+                        <h1 class="card-title">{{$pending->count()}}</h1>
                           <p class="card-text">Status Pending.</p>
                          
                         </div>
@@ -23,7 +23,7 @@
                     <div class="col-sm-4">
                       <div class="card">
                         <div class="card-body">
-                          <h1 class="card-title"></h1>
+                          <h1 class="card-title">{{$approved->count()}}</h1>
                           <p class="card-text">Status Approved.</p>
                          
                         </div>
@@ -32,7 +32,7 @@
                     <div class="col-sm-4">
                         <div class="card">
                           <div class="card-body">
-                            <h1 class="card-title"></h1>
+                            <h1 class="card-title">{{$rejected->count()}}</h1>
                             <p class="card-text">Status Rejected.</p>
                             
                           </div>

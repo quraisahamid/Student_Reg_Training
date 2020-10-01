@@ -28,4 +28,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/registrations/approve/{id}','RegistrationController@approve')->name('registration.approve');
+Route::get('/registrations/reject/{id}','RegistrationController@reject')->name('registration.reject');
+Route::get('/registrations/edit/{id}','RegistrationController@edit')->name('registration.edit');
+Route::put('/registrations/update','RegistrationController@update')->name('registration.update');
 Route::resource('/registrations', 'RegistrationController');
